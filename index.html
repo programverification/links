@@ -1,5 +1,2080 @@
----
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
----
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2020 -->
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>SCPub</title>
+  
+  
+  <meta name="author" content="NTU SRSLab">
+  
+  
+  
+  <meta name="description" content="A Dataset of Recent Publications on Smart Contract Formal Specification and Verification">
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="alternate" type="application/rss+xml" title="SCPub - A dataset of smart contract publications" href="https://ntu-srslab.github.io/smart-contract-publications/feed.xml">
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/smart-contract-publications/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/smart-contract-publications/assets/css/main.css">
+    
+  
+
+  
+
+  
+
+  <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="SCPub">
+  
+
+   
+  <meta property="og:description" content="A Dataset of Recent Publications on Smart Contract Formal Specification and Verification">
+  
+
+
+  <meta property="og:type" content="website">
+
+  
+  <meta property="og:url" content="https://ntu-srslab.github.io/smart-contract-publications/">
+  <link rel="canonical" href="https://ntu-srslab.github.io/smart-contract-publications/">
+  
+
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  
+  <meta name="twitter:title" content="SCPub">
+  
+
+  
+  <meta name="twitter:description" content="A Dataset of Recent Publications on Smart Contract Formal Specification and Verification">
+  
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <script> $(document).ready(function(){$('#papers').DataTable({stateSave: true});});
+    </script>
+  
+</head>
+
+
+  <body>
+
+    
+
+  
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom "><a class="navbar-brand" href="https://ntu-srslab.github.io/smart-contract-publications">SCPub</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/smart-contract-publications/index">Dataset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/smart-contract-publications/surveys">Surveys</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/smart-contract-publications/about">About</a>
+          </li></ul>
+  </div>
+
+  
+
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>SCPub</h1>
+      
+        
+            <hr class="small">
+            <span class="page-subheading">A Dataset of Recent Publications on Smart Contract Formal Specification and Verification</span>
+      
+      
+      
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container-md" role="main">
+      <p>The dataset serves as the supplementary material for a <a href="https://arxiv.org/abs/2008.02712">survey</a> of formal specification and verification of smart contracts.</p>
+
+      
+            <div class="datatable">
+  <table id="papers" class="stripe hover order-column row-border">
+    <thead>
+      <tr>
+        <th>Publication</th>
+        <th>Authors</th>
+        <th>Venue</th>
+        <th>Year</th>
+        <th>Keywords</th>
+        <th>Platform</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><a href="http://dspace.library.uu.nl/handle/1874/365596">A model-driven approach to smart contract development</a></td>
+        <td>Boogaard</td>
+        <td>Master's Thesis</td>
+        <td>2018</td>
+        <td>Program synthesis, Validation, ADICO statements, FSM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-981-15-1137-0_4">Secure smart contract generation based on Petri Nets</a></td>
+        <td>Zupan et al.</td>
+        <td>Blockchain Technology for Industry 4.0</td>
+        <td>2020</td>
+        <td>Petri Nets, Validation, Program synthesis</td>
+        <td>Ethereum, Hyperledger Fabric is future work</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1912.04051.pdf">Building executable secure design models for smart contracts with formal methods</a></td>
+        <td>Xu and Fink</td>
+        <td>WTSC@FC</td>
+        <td>2019</td>
+        <td>Set-based methods, TLA+, Design patterns, Legal contract</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8645646">Automatic smart contract generation using controlled natural language and template</a></td>
+        <td>Tateishi et al.</td>
+        <td>IBM Journal of Research and Development</td>
+        <td>2019</td>
+        <td>Program synthesis, LDLf, ECA rules, Template, SCXML, Statechart, DSL4SC</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-89722-6_11">Tool demonstration: FSolidM for designing secure Ethereum smart contracts</a></td>
+        <td>Mavridou and Laszka</td>
+        <td>POST</td>
+        <td>2018</td>
+        <td>Program synthesis, FSM, Design patterns, FSolidM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1807.07822.pdf">Specification mining for smart contracts with automatic abstraction tuning execution trace</a></td>
+        <td>Guth et al.</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Execution trace, Event abstraction, Dependency graph, Specification mining</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8416237">Towards model-driven engineering of smart contracts for cyber-physical systems</a></td>
+        <td>Garamvölgyi et al.</td>
+        <td>IEEE DNS Workshops</td>
+        <td>2018</td>
+        <td>Program synthesis, YAKINDU, Cyber-physical system, Access control</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1906.02906.pdf">Smart contract design meets state machine synthesis: Case studies</a></td>
+        <td>Suvorov and Ulyantsev</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>LTL, Program synthesis, EFSM-tools</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1808.03517.pdf">Caterpillar: A business process execution engine on the Ethereum blockchain</a></td>
+        <td>López-Pintado et al.</td>
+        <td>Software: Practice and Experience</td>
+        <td>2019</td>
+        <td>Program synthesis, Monitoring, BPMN</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1612.03152.pdf">Optimized execution of business processes on blockchain</a></td>
+        <td>Garcı́a-Bañuelos et al.</td>
+        <td>BPM</td>
+        <td>2017</td>
+        <td>Program synthesis, BPMN, Petri nets</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-45348-4_19">Untrusted business processes monitoring and execution using blockchain</a></td>
+        <td>Weber et al.</td>
+        <td>BPM</td>
+        <td>2016</td>
+        <td>Program synthesis, Monitoring, BPMN</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.usenix.org/system/files/woot19-paper_lee.pdf">Who Spent My EOS? On the (In)Security of Resource Management of EOS.IO</a></td>
+        <td>Lee et al.</td>
+        <td>USENIX WOOT</td>
+        <td>2019</td>
+        <td>Resource consumption, Exploit generation</td>
+        <td>EOS.IO</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal.inria.fr/hal-01831075/document">SmartInspect: Solidity smart contract inspector</a></td>
+        <td>Bragagnolo</td>
+        <td>IEEE IWBOSE@SANER</td>
+        <td>2018</td>
+        <td>Inspection, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://fc19.ifca.ai/wtsc/SoliditySolid.pdf">Is solidity solid enough?</a></td>
+        <td>Crafa et al.</td>
+        <td>WTSC@FC</td>
+        <td>2019</td>
+        <td>Formal semantics, Solidity, Featherweight Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8705875">Beagle: A new framework for smart contracts taking account of law</a></td>
+        <td>Tsai et al.</td>
+        <td>IEEE SOSE</td>
+        <td>2019</td>
+        <td>DSL, Legal contract</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://yanniss.github.io/gigahorse-icse19.pdf">Gigahorse: thorough, declarative decompilation of smart contracts</a></td>
+        <td>Grech et al.</td>
+        <td>IEEE/ACM ICSE</td>
+        <td>2019</td>
+        <td>CFG, Decompilation, Datalog</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.11613.pdf">How effective are smart contract analysis tools? Evaluating smart contract static analysis tools using bug injection</a></td>
+        <td>Ghaleb and Pattabiraman</td>
+        <td>ACM ISSTA</td>
+        <td>2020</td>
+        <td>Bug injection, Evaluation</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8945726">SIF: A framework for Solidity contract instrumentation and analysis</a></td>
+        <td>Peng et al.</td>
+        <td>IEEE APSEC</td>
+        <td>2019</td>
+        <td>Bug injection, Code instrumentation, Program synthesis, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://ceur-ws.org/Vol-2196/BPM_2018_paper_12.pdf">Lorikeet: A model-driven engineering tool</a></td>
+        <td>Tran et al.</td>
+        <td>BPM</td>
+        <td>2018</td>
+        <td>BPMN, Model-driven engineering, Program synthesis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal.archives-ouvertes.fr/hal-01942005/document">The treewidth of smart contracts</a></td>
+        <td>Chatterjee et al.</td>
+        <td>ACM SAC</td>
+        <td>2019</td>
+        <td>CFG, Treewidth</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://fc18.ifca.ai/wtsc/6-Abstract.pdf">Proof-carrying smart contract</a></td>
+        <td>Dickerson et al.</td>
+        <td>WTSC@FC</td>
+        <td>2018</td>
+        <td>Proof-carrying code, Hoare-style properties, In theory: Why3, Boogie verification</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/7789470">From institutions to code: Towards automated generation of smart contracts</a></td>
+        <td>Frantz and Nowostawski</td>
+        <td>IEEE FAS*W</td>
+        <td>2016</td>
+        <td>Program synthesis, DSL, ADICO statements</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2018/192.pdf">SoK: unraveling Bitcoin smart contracts</a></td>
+        <td>Atzei et al.</td>
+        <td>POST</td>
+        <td>2018</td>
+        <td>DSL, Process algebra, Formal semantics</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8763784">Porthos: macroprogramming blockchain systems</a></td>
+        <td>Mizzi et al.</td>
+        <td>IFIP NTMS</td>
+        <td>2019</td>
+        <td>DSL, Commitment, Inter-chain communication, Peyton Jones</td>
+        <td>Hyperledger Fabric, Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://iohk.io/en/research/library/papers/marlowefinancial-contracts-on-blockchain/">Marlowe: Financial Contracts on Blockchain</a></td>
+        <td>Lamela Seijas and Thompson</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>DSL, Marlowe Language, Formal semantics, Haskell, Peyton Jones</td>
+        <td>Cardano</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2018/398.pdf">Fun with Bitcoin Smart Contracts</a></td>
+        <td>Bartoletti et al.</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>DSL, Process algebra, BitML</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3191697.3213790">Writing Safe Smart Contracts in Flint</a></td>
+        <td>Schrans et al.</td>
+        <td>ACM Programming</td>
+        <td>2018</td>
+        <td>Programming language, Asset (Linear) type, Writing restrictions</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprints.cs.univie.ac.at/6341/1/PID6382125.pdf">Domain specific language for smart contract development</a></td>
+        <td>Wohrer and Zdun</td>
+        <td>IEEE ICBC</td>
+        <td>2020</td>
+        <td>DSL, Program synthesis, CML</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8524068">SmaCoNat: Smart contracts in natural language</a></td>
+        <td>Regnath and Steinhorst</td>
+        <td>FDL</td>
+        <td>2018</td>
+        <td>DSL, Cyber-physical system</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1711.09327.pdf">Designing secure Ethereum smart contracts: A finite state machine based approach</a></td>
+        <td>Mavridou and Laszka</td>
+        <td>WTSC@FC</td>
+        <td>2018</td>
+        <td>Program synthesis, FSM, Design patterns, FSolidM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://orbilu.uni.lu/bitstream/10993/30975/3/findel.pdf">Findel: Secure derivative contracts for Ethereum</a></td>
+        <td>Biryukov et al.</td>
+        <td>WTSC@FC</td>
+        <td>2017</td>
+        <td>DSL, Financial derivative, Peyton Jones</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-31500-9_15">A minimal core calculus for Solidity contracts</a></td>
+        <td>Bartoletti et al.</td>
+        <td>ESORICS, DPM and CBT</td>
+        <td>2019</td>
+        <td>Formal semantics, Solidity, TinySol</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8377649">SPESC: A specification language for smart contracts</a></td>
+        <td>He et al.</td>
+        <td>IEEE COMPSAC</td>
+        <td>2018</td>
+        <td>DSL, Legal contract</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2018/122.pdf">BitML: A calculus for Bitcoin smart contracts</a></td>
+        <td>Bartoletti and Zunino</td>
+        <td>ACM CCS</td>
+        <td>2018</td>
+        <td>DSL, Process algebra, Formal semantics, BitML</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1904.06534.pdf">Flint for safer smart contracts</a></td>
+        <td>Schrans et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Programming language, Asset (Linear) type, Writing restrictions</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.13602.pdf">Certifying Findel derivatives for blockchain</a></td>
+        <td>Arusoaie</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>DSL, Thorem proving, Formal semantics, Coq, Peyton Jones, Financial derivatives</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-70278-0_33">Defining the Ethereum virtual machine for interactive theorem provers</a></td>
+        <td>Hirai</td>
+        <td>WTSC@FC</td>
+        <td>2017</td>
+        <td>Theorem proving, Isabelle/HOL, Formal semantics, Vulnerabilities, EVM, Deed</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://iohk.io/en/research/library/papers/marloweimplementing-and-analysing-financial-contracts-on-blockchain/">Marlowe: implementing and analysing financial contracts on blockchain</a></td>
+        <td>Lamela Seijas et al.</td>
+        <td>WTSC@FC</td>
+        <td>2020</td>
+        <td>DSL, Theorem proving, Isabelle/HOL, Static analysis, Haskell SBV, Peyton Jones, Language meta-theory</td>
+        <td>Cardano</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal.inria.fr/hal-02555738v3/document">Termination of Ethereum's smart contracts</a></td>
+        <td>Genet et al.</td>
+        <td>Research Report</td>
+        <td>2020</td>
+        <td>Theorem proving, Isabelle/HOL, Formal semantics, EVM, Resource consumption</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://yoichihirai.com/deed.pdf">Formal verification of Deed contract in Ethereum Name Service</a></td>
+        <td>Hirai</td>
+        <td>Personal Website</td>
+        <td>2016</td>
+        <td>Theorem proving, Isabelle/HOL, Lem, EVM, Access Control, Deed</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-32409-4_8">Towards verifying Ethereum smart contracts at intermediate language level</a></td>
+        <td>Li et al.</td>
+        <td>ICFEM</td>
+        <td>2019</td>
+        <td>Theorem proving, Isabelle/HOL, Yul, Functional correctness, Safe arithmetics</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2001.04314.pdf">Formal specification of a security framework for smart contracts</a></td>
+        <td>Mandrykin et al.</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Theorem proving, Isabelle/HOL, Cap9</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3167084">Towards verifying ethereum smart contract bytecode in Isabelle/HOL</a></td>
+        <td>Amani et al.</td>
+        <td>ACM CPP</td>
+        <td>2018</td>
+        <td>Theorem proving, Isabelle/HOL, Hoare logic, Program logic</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1902.08726.pdf">A hybrid formal verification system in Coq for ensuring the reliability and security of Ethereum-based service smart contracts</a></td>
+        <td>Yang et al.</td>
+        <td>IEEE Access</td>
+        <td>2020</td>
+        <td>Theorem proving, Coq, Static analysis, Symbolic & concolic execution, Hoare logic, Memory model, FEther, Lolisa, FSPVM-E</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1810.04828.pdf">FEther: An extensible definitional interpreter for smart-contract verifications in Coq</a></td>
+        <td>Yang and Lei</td>
+        <td>IEEE Access</td>
+        <td>2020</td>
+        <td>Theorem proving, Coq, Symbolic & concolic execution, Formal semantics</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1803.09885.pdf">Lolisa: Formal syntax and semantics for a subset of the Solidity programming language</a></td>
+        <td>Yang and Lei</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Theorem proving, Coq, Formal semantics, Language meta-theory, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2001.02630.pdf">Albert, an intermediate smart-contract language for the Tezos blockchain</a></td>
+        <td>Bernardo et al.</td>
+        <td>WTSC@FC</td>
+        <td>2019</td>
+        <td>Certified compilation, Coq, Ott framework, Linear types</td>
+        <td>Tezos</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.mimuw.edu.pl/~jz321207/papers/vstte18-solidity.pdf">Towards verification of Ethereum smart contracts: A formalization of core of Solidity</a></td>
+        <td>Zakrzewski</td>
+        <td>VSTTE@CAV</td>
+        <td>2018</td>
+        <td>Theorem proving, Coq, Formal semantics, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1711.03028.pdf">Simplicity: A new language for blockchains</a></td>
+        <td>O'Connor</td>
+        <td>ACM PLAS@PLDI</td>
+        <td>2017</td>
+        <td>Programming language, Theorem proving, Coq, Formal semantics, Language meta-theory</td>
+        <td>Bitcoin and Bitcoin-like</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1812.05444.pdf">Pluralize: a trustworthy framework for high-level smart contract-draft</a></td>
+        <td>Dargaye et al.</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Trust management, Theorem proving, Coq, DSL</td>
+        <td>Blockchain ADT</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal-cea.archives-ouvertes.fr/cea-01807036/document">Towards secure and trusted-by-design smart contracts</a></td>
+        <td>Dargaye et al.</td>
+        <td>JFLA</td>
+        <td>2018</td>
+        <td>Theorem proving, Coq, Trust management</td>
+        <td>Blockchain ADT</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ilyasergey.net/papers/temporal-isola18.pdf">Temporal properties of smart contracts</a></td>
+        <td>Sergey et al.</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>Theorem proving, Coq, Formal trace semantics, Scilla</td>
+        <td>Ethereum, Zilliqa</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1909.08671.pdf">Mi-Cho-Coq, a framework for certifying Tezos Smart Contracts</a></td>
+        <td>Bernardo et al.</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Theorem proving, Coq, Weakest precondition calculus, Functional correctness, Michelson</td>
+        <td>Tezos</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1907.10674.pdf">Towards a smart contract verification framework in Coq</a></td>
+        <td>Annenkov and Spitters</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Theorem proving, Coq, Language meta-theory, Oak, AST, MetaCoq, Functional correctness</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1911.04732.pdf">Smart contract interactions in Coq</a></td>
+        <td>Nielsen and Spitters</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Theorem proving, Coq, Inter-contract analysis, Shallow embedding, Invariant, Congress</td>
+        <td>Depth-first (Ethereum) and breadth-first (Tezos) execution blockchains</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.mdpi.com/2079-9292/9/2/255">A formal verification framework for security issues of blockchain smart contracts</a></td>
+        <td>Sun and Yu</td>
+        <td>Electronics</td>
+        <td>2020</td>
+        <td>Theorem proving, Coq, Integer overflow, Functional correctness, Invariants, Access control, BNB</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1907.10674.pdf">ConCert: A smart contract certification framework in Coq</a></td>
+        <td>Annenkov et al.</td>
+        <td>ACM CPP</td>
+        <td>2020</td>
+        <td>Theorem proving, Coq, MetaCoq, AST, Language meta-theory, Acorn, Functional correctness</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1801.00687.pdf">Scilla: A Smart Contract Intermediate-Level LAnguage</a></td>
+        <td>Sergey et al.</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Theorem proving, Coq</td>
+        <td>Zilliqa</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1807.09484.pdf">Raziel: Private and verifiable smart contracts on blockchains</a></td>
+        <td>Sanchez</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Proof-carrying code, Theorem proving, Coq, Privacy, NIZK proof, Obliv-Java, JML</td>
+        <td>OmniLedger, Hyperledger Fabric, Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://iohk.io/en/research/library/papers/system-f-in-agdafor-fun-and-profit/">System F in Agda, for fun and profit</a></td>
+        <td>Chapman et al.</td>
+        <td>MPC</td>
+        <td>2019</td>
+        <td>Formal Semantics, Language meta-theory, Agda, Plutus Core</td>
+        <td>Cardano</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://yoichihirai.com/isola-paper.pdf">Blockchains as Kripke models: An analysis of atomic cross-chain swap</a></td>
+        <td>Hirai</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>Intuitionistic epistemic logic, Kripke model, Hashlock, Atomicity, Atomic swap</td>
+        <td>N/A (Cross-chain)</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1909.03523.pdf">Obsidian: Typestate and assets for safer blockchain programming</a></td>
+        <td>Coblenz et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Programming language, State-oriented programming, Linear types, Language meta-theory</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2004.05106.pdf">Resources: A safe language abstraction for Mmney</a></td>
+        <td>Blackshear et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Move, Linear types, Language meta-theory</td>
+        <td>Libra</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1810.11605.pdf">Exploiting the laws of order in smart contracts</a></td>
+        <td>Kolluri et al.</td>
+        <td>ACM ISSTA</td>
+        <td>2019</td>
+        <td>Symbolic execution, Z3, Fuzzing, Event-ordering vulnerabilities, EthRacer</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://files.sri.inf.ethz.ch/website/papers/sp20-verx.pdf">VerX: Safety verification of smart contracts</a></td>
+        <td>Permenev et al.</td>
+        <td>IEEE S&P</td>
+        <td>2020</td>
+        <td>Symbolic execution, Z3, Delayed predicate abstraction, Reachability checking, ptLTL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2003.06568.pdf">Security analysis of EOSIO smart contracts</a></td>
+        <td>He et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Symbolic execution, Z3, Static analysis, Vulnerabilities, EOSafe</td>
+        <td>EOS.IO</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8328743">Security assurance for smart contract</a></td>
+        <td>Zhou et al.</td>
+        <td>IFIP NTMS</td>
+        <td>2018</td>
+        <td>Symbolic execution, Z3, Syntax analysis, Topological analysis, Oyente, SASC</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.usenix.org/system/files/sec19-torres.pdf">The art of the scam: Demystifying honeypots in Ethereum smart contracts</a></td>
+        <td>Ferreira Torres et al.</td>
+        <td>USENIX Security</td>
+        <td>2019</td>
+        <td>Symbolic execution, Z3, Heuristics, Oyente, HoneyBadger</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/7884650">Under-optimized smart contracts devour your money</a></td>
+        <td>Chen et al.</td>
+        <td>IEEE SANER</td>
+        <td>2017</td>
+        <td>Symbolic execution, Z3, Resource consumption, CFG, Inefficient patterns, Gasper</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1808.00624.pdf">sCompile: Critical path identification and analysis for smart contracts</a></td>
+        <td>Chang et al.</td>
+        <td>ICFEM</td>
+        <td>2019</td>
+        <td>Symbolic execution, Z3, CFG, Monetary paths</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/b-mueller/smashing-smart-contracts/blob/master/smashing-smart-contracts-1of1.pdf">Smashing Ethereum smart contracts for fun and real profit</a></td>
+        <td>Mueller</td>
+        <td>HITB SecConf</td>
+        <td>2018</td>
+        <td>Symbolic execution, Z3, CFG, Vulnerabilities, Mythril</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1907.03890.pdf">Manticore: A User-Friendly Symbolic Execution Framework for Binaries and smart contracts</a></td>
+        <td>Mossberg et al.</td>
+        <td>IEEE/ACM ASE</td>
+        <td>2019</td>
+        <td>Symbolic execution, Z3, CFG, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1802.06038.pdf">Finding the greedy, prodigal, and suicidal contracts at scale</a></td>
+        <td>Nikolić et al.</td>
+        <td>ACSAC</td>
+        <td>2018</td>
+        <td>Symbolic execution, Z3, Trace properties, Exploit generation, Maian</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-krupp.pdf">teEther: Gnawing at ethereum to automatically exploit smart contracts</a></td>
+        <td>Krupp and Rossow</td>
+        <td>USENIX Security</td>
+        <td>2018</td>
+        <td>Symbolic execution, Z3, Exploit generation, CFG, Trace properties, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://orbilu.uni.lu/bitstream/10993/36757/1/osiris.pdf">Osiris: Hunting for integer bugs in Ethereum smart contracts</a></td>
+        <td>Ferreira Torres et al.</td>
+        <td>ACM ACSAC</td>
+        <td>2018</td>
+        <td>Symbolic execution, Z3, Oyente, Integer bugs</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1812.07702.pdf">Detecting standard violation errors in smart contracts</a></td>
+        <td>Li and Long</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Symbolic execution, Boolector, Invariants, ERC20, ERC721</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2016/633.pdf">Making smart contracts smarter</a></td>
+        <td>Luu et al.</td>
+        <td>ACM CCS</td>
+        <td>2016</td>
+        <td>Symbolic execution, Z3, CFG, Oyente</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8763848/">Evaluating spread of 'Gasless Send' in Ethereum smart contracts</a></td>
+        <td>Prechtel et al.</td>
+        <td>IFIP NTMS</td>
+        <td>2019</td>
+        <td>Symbolic Execution Z3, Resource consumption, Mythril</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1902.06067.pdf">Precise attack synthesis for smart contracts</a></td>
+        <td>Feng et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Symbolic execution, Boolector, Abstract interpretation, Exploit generation, Racket, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1907.03868.pdf">Annotary: A concolic execution system for developing secure smart contracts</a></td>
+        <td>Weiss and Schütte</td>
+        <td>ESORICS</td>
+        <td>2019</td>
+        <td>Concolic execution, Invariants, Writing restrictions, Inter-contract analysis, Mythril</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.ntu.edu.sg/home/yi_li/publication/Liu2020TAV/">Towards automated verification of smart contract fairness</a></td>
+        <td>Liu et al.</td>
+        <td>ACM ESEC/FSE</td>
+        <td>2020</td>
+        <td>Symbolic execution, Z3, Dafny, Mechanism design, Invariants, FairCon</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-30985-5_23">On the Prediction of smart contracts' Behaviours</a></td>
+        <td>Laneve et al.</td>
+        <td>From Software Engineering to Formal Methods and Tools, and Back</td>
+        <td>2019</td>
+        <td>Symbolic analysis, Process algebra, scl, Objective function, Game theory</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://s-tikhomirov.github.io/assets/papers/smartcheck.pdf">SmartCheck: Static analysis of Ethereum smart contracts</a></td>
+        <td>Tikhomitov et al.</td>
+        <td>IEEE/ACM WETSEB@ICSE</td>
+        <td>2018</td>
+        <td>Syntactic analysis, Pattern matching, XML, XPath, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1911.09425.pdf">SolidityCheck: Quickly detecting smart contract problems through regular expressions</a></td>
+        <td>Zhang et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Syntactic analysis, Pattern matching, RegEx</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/spe.2745">NeuCheck: A more practical Ethereum smart contract security analysis tool</a></td>
+        <td>Lu et al.</td>
+        <td>Software: Practice and experience</td>
+        <td>2019</td>
+        <td>Syntactic analysis, Pattern matching, XML, XPath, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8666486/">Potential risks of Hyperledger Fabric smart contracts</a></td>
+        <td>Yamashita et al.</td>
+        <td>IEEE IWBOSE@SANER</td>
+        <td>2019</td>
+        <td>Syntactic analysis, AST, Vulnerabilities</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-981-15-3418-8_5">ReJection: A AST-based reentrancy vulnerability detection method</a></td>
+        <td>Ma et al.</td>
+        <td>CTCIS</td>
+        <td>2020</td>
+        <td>Syntactic analysis, AST, Reentrancy, Slither</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.07908.pdf">Why do smart contracts self-destruct? Investigating the Selfdestruct function on Ethereum</a></td>
+        <td>Chen et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Syntactic analysis, AST, Execution trace, Machine learning, Access control</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/9054822">EthPloit: From fuzzing to efficient exploit generation against smart contracts</a></td>
+        <td>Zhang et al.</td>
+        <td>IEEE SANER</td>
+        <td>2020</td>
+        <td>Fuzzing, Taint analysis, Exploit generation</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.12156.pdf">Towards Smart Hybrid Fuzzing for smart contracts</a></td>
+        <td>Ferreira Torres et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Fuzzing, Symbolic execution</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://files.sri.inf.ethz.ch/website/papers/ccs19-ilf.pdf">Learning to fuzz from symbolic execution with application to smart contracts</a></td>
+        <td>He et al.</td>
+        <td>ACM CCS</td>
+        <td>2019</td>
+        <td>Fuzzing, Symbolic execution, Imitation-based learning</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.ntu.edu.sg/home/yi_li/files/Wang2019VUL.pdf">VULTRON: Catching vulnerable smart contracts once and for all</a></td>
+        <td>Wang et al.</td>
+        <td>IEEE/ACM ICSE</td>
+        <td>2019</td>
+        <td>Fuzzing, Test oracles, Invariants</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1807.03932.pdf">ContractFuzzer: Fuzzing smart contracts for vulnerability detection</a></td>
+        <td>Jiang et al.</td>
+        <td>IEEE/ACM ASE</td>
+        <td>2018</td>
+        <td>Fuzzing, Test oracles, Vulnerabilities, Instrumented EVM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1905.06944.pdf">Harvey: A greybox fuzzer for smart contracts</a></td>
+        <td>Wustholz and Christakis</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Demand-driven sequence fuzzing, Input prediction, Vulnerabilities</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1909.06605.pdf">Oracle-supported dynamic exploit generation for smart contracts</a></td>
+        <td>Wang et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Fuzzing, Test oracles, Invariants, Exploit Generation</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8449446/">ReGuard: Finding reentrancy bugs in smart contracts</a></td>
+        <td>Liu et al.</td>
+        <td>IEEE/ACM ICSE</td>
+        <td>2018</td>
+        <td>Fuzzing, C++, Automata, Reentrancy, Execution trace</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-03427-6_23">Contracts over smart contracts: Recovering from violations dynamically</a></td>
+        <td>Colombo et al.</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>Runtime verification, Checkpoining, Recovery, Code update, ContractLarva</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-03769-7_8">Monitoring smart contracts: Contractlarva and open challenges beyond</a></td>
+        <td>Pace et al.</td>
+        <td>RV</td>
+        <td>2018</td>
+        <td>Runtime verification, Contract instrumentation, Contractlarva, ERC20, Procurement</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8530777">Runtime verification of Ethereum smart contracts</a></td>
+        <td>Pace and Ellul</td>
+        <td>IEEE EDCC</td>
+        <td>2018</td>
+        <td>Runtime verification, Contract instrumentation, Contractlarva, Casino</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3319535.3345664">TokenScope: Automatically detecting inconsistent behaviors of cryptocurrency tokens in Ethereum</a></td>
+        <td>Chen et al.</td>
+        <td>ACM CCS</td>
+        <td>2019</td>
+        <td>Runtime verification, Execution trace, ERC20</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.08278.pdf">EthScope: A transaction-centric security analytics framework to detect malicious smart contracts on Ethereum</a></td>
+        <td>Wu et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Runtime verification, Code instrumentation, EVM instrumentation, Execution trace</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://wingtecher.com/themes/WingTecherResearch/assets/papers/saner-evm.pdf">EVM*: From offline detection to online reinforcement for Ethereum Virtual Machine</a></td>
+        <td>Ma et al.</td>
+        <td>IEEE SANER</td>
+        <td>2019</td>
+        <td>Runtime verification, EVM instrumentation, js-evm, Integer overflow, Timestamp dependency</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1812.05934.pdf">Sereum: Protecting existing smart contracts against re-entrancy attacks</a></td>
+        <td>Rodler et al.</td>
+        <td>NDSS</td>
+        <td>2019</td>
+        <td>Runtime verification, Taint analysis, EVM instrumentation, Reentrancy</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1801.04032.pdf">Online detection of Effectively Callback Free objects with applications to smart contracts</a></td>
+        <td>Grossman et al.</td>
+        <td>ACM POPL</td>
+        <td>2018</td>
+        <td>Runtime verification, Static analysis, Serializability, Execution trace, EVM instrumentation, Reentrancy</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1808.00093.pdf">Implementation of smart contracts using hybrid architectures with on- and off-blockchain components</a></td>
+        <td>Molina-Jimenez et al.</td>
+        <td>IEEE SC2</td>
+        <td>2018</td>
+        <td>Runtime verification, Contract Compliance Checker, Model checking, SPIN, Legal contract</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-23404-1_9">Enriching smart contracts with temporal aspects</a></td>
+        <td>Fournier and Skarbovsky</td>
+        <td>ICBC</td>
+        <td>2019</td>
+        <td>Runtime verification, Complex event processing, CEP PROTON, Supply chain</td>
+        <td>Hyperledger Fabric, Composer</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://essay.utwente.nl/76902/">Solitor: Runtime verification of smart contracts on the Ethereum network</a></td>
+        <td>Stegeman</td>
+        <td>Master's Thesis</td>
+        <td>2018</td>
+        <td>Runtime verification, Annotations, Code instrumentation, DSL, ANTLR, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://ebooks.iospress.nl/volumearticle/50831">On observing contracts: deontic contracts meet smart contracts</a></td>
+        <td>Azzopardi et al.</td>
+        <td>JURIX</td>
+        <td>2018</td>
+        <td>Runtime verification, Code instrumentation, Deontic logic, Formal semantics, Legal contract</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8945725">SolAnalyser: A framework for analysing and testing smart contracts</a></td>
+        <td>Akca et al.</td>
+        <td>IEEE APSEC</td>
+        <td>2019</td>
+        <td>Runtime verification, Testing, Code instrumentation, Bug injection, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.ndss-symposium.org/wp-content/uploads/2020/02/24449-paper.pdf">SODA: A generic online detection framework for smart contracts</a></td>
+        <td>Chen et al.</td>
+        <td>NDSS</td>
+        <td>2020</td>
+        <td>Runtime verification, Client instrumentation, ERC20</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1811.03814.pdf">EASYFLOW: Keep Ethereum away from overflow</a></td>
+        <td>Gao et al.</td>
+        <td>IEEE/ACM ICSE Companion</td>
+        <td>2019</td>
+        <td>Runtime verification, EVM instrumentation, Pattern matching, Integer overflow</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://lafhis.dc.uba.ar/users/~diegog/licTesis/2019-12-17-Vera-Bogdanich.pdf">Ethereum smart contracts verification: A survey and a prototype tool</a></td>
+        <td>Bogdanich Espina</td>
+        <td>Bachelor's Thesis</td>
+        <td>2019</td>
+        <td>Runtime verification, ptLTL, Code instrumentation, Slither, VeriSol, Manticore</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3385412.3385982">Securing smart contract with runtime validation</a></td>
+        <td>Li et al.</td>
+        <td>ACM PLDI</td>
+        <td>2020</td>
+        <td>Runtime verification, Code instrumentation, Invariants, ERC20, ERC721, ERC1202</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2003.05987.pdf">Ægis: Smart shielding of smart contracts</a></td>
+        <td>Ferreira Torres et al.</td>
+        <td>ACM CCS</td>
+        <td>2019</td>
+        <td>Runtime verification, Instrumented EVM, DSL, Patterns</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1911.12555.pdf">Securing smart contracts on the fly</a></td>
+        <td>Li et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Runtime verification, Code instrumentation, Invariants, ERC20, ERC721, ERC1202</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0164121220301163">A federated society of bots for smart contract testing</a></td>
+        <td>Viglianisi et al.</td>
+        <td>Journal of Systems and Software</td>
+        <td>2020</td>
+        <td>Testing, Static analysis, Z3, Invariants, EIP20, SoCRATES</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/9050260/">Reentrancy vulnerability identification in Ethereum smart contracts</a></td>
+        <td>Samreen and Alalfi</td>
+        <td>IEEE IWBOSE@SANER</td>
+        <td>2020</td>
+        <td>Testing, Syntactic analysis, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://pdfs.semanticscholar.org/26c2/b7e7479336d44891aadda6b5eaae2ca2ee91.pdf">EtherTrust: Sound static analysis of Ethereum bytecode</a></td>
+        <td>Grishchenko et al.</td>
+        <td>Technical Report</td>
+        <td>2018</td>
+        <td>Program verification, Reachability analysis, Horn clauses</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.06227.pdf">eThor: Practical and provably sound static analysis of Ethereum smart contracts</a></td>
+        <td>Schneidewind et al.</td>
+        <td>ACM CCS</td>
+        <td>2020</td>
+        <td>Program verification, Reachability analysis, Horn clauses, Hoare logic, HoRSt, DSL, Single-entrancy</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.netidee.at/sites/default/files/2018-07/cav2018.pdf">Foundations and tools for the static analysis of Ethereum smart contracts</a></td>
+        <td>Grishchenko et al.</td>
+        <td>CAV</td>
+        <td>2018</td>
+        <td>Program verification, Reachability analysis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1904.11281.pdf">Deductive proof of Ethereum smart contracts using Why3</a></td>
+        <td>Nehaı̈ and Bobot</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Deductive verification, Why3, Why3 FOL, Runtime errors, Functional correctness, Marketplace</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-50029-0_21">Towards a formally verified EVM in production environment</a></td>
+        <td>Zhang et al.</td>
+        <td>COORDINATION</td>
+        <td>2020</td>
+        <td>Deductive verification, Why3, Why3 FOL, Functional correctness, Integer overflow, Auction</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/abs/2005.14650">WhylSon: Proving your Michelson smart contracts in Why3</a></td>
+        <td>Horta et al.</td>
+        <td>FMBC@CAV</td>
+        <td>2020</td>
+        <td>Deductive verification, Why3, Why3 FOL, Multisig, Factorial</td>
+        <td>Tezos</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1912.11929.pdf">GASOL: Gas analysis and optimization for Ethereum smart contracts</a></td>
+        <td>Albert et al.</td>
+        <td>TACAS</td>
+        <td>2020</td>
+        <td>Resource consumption, Resource optimization, Static analysis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.01261.pdf">Formal verification of Solidity contracts in Event-B</a></td>
+        <td>Zhu et al.</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Set-based methods, Event-B, Rodin, Honeypot</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-42019-6_11">Evaluation of logic-based smart contracts for blockchain systems</a></td>
+        <td>Idelberger et al.</td>
+        <td>RuleML</td>
+        <td>2016</td>
+        <td>Deontic defeasible logic, FCL, SPINdle</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1007/s10506-018-9223-3">On legal contracts, imperative and declarative smart contracts, and blockchain systems</a></td>
+        <td>Governatori et al.</td>
+        <td>Artificial Intelligence and Law</td>
+        <td>2018</td>
+        <td>Deontic defeasible logic, FCL, SPINdle</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://pages.cpsc.ucalgary.ca/~joel.reardon/blockchain/readings/ndss2018_09-1_Kalra_paper.pdf">ZEUS: Analyzing safety of smart contracts</a></td>
+        <td>Kalra et al.</td>
+        <td>NDSS</td>
+        <td>2018</td>
+        <td>LLVM, Model checking, Seahorn, Constrained Horn clauses, Abstract interpretation, Code instrumentation, XACML, FOL</td>
+        <td>Ethereum, Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://home.cse.ust.hk/~shuaiw/papers/oopsla19.pdf">Detecting nondeterministic payment bugs in Ethereum smart contracts</a></td>
+        <td>Wang et al.</td>
+        <td>ACM OOPSLA</td>
+        <td>2019</td>
+        <td>LLVM, Bounded model checking, SMACK, Taint analysis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.key-project.org/wp-content/uploads/2019/11/sc-verification.pdf">Smart contracts: Application scenarios for deductive program verification</a></td>
+        <td>Beckert et al.</td>
+        <td>FMBC@FM</td>
+        <td>2019</td>
+        <td>Deductive verification, KeY, JML, JavaDL, Program logic</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://formal.iti.kit.edu/kirsten/pub/beckertHerdaKirstenEA2018.pdf">Formal specification and verification of Hyperledger Fabric chaincode</a></td>
+        <td>Beckert et al.</td>
+        <td>SDLT@ICFEM</td>
+        <td>2018</td>
+        <td>Deductive verification, KeY, JML, JavaDL, Program logic</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://www.cse.chalmers.se/~ahrendt/papers/ARND18.pdf">Smart contracts: A killer application for deductive source code verification</a></td>
+        <td>Ahrendt et al.</td>
+        <td>Principled Software Development</td>
+        <td>2018</td>
+        <td>Deductive verification, KeY, JML, JavaDL, Program logic</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-31517-7_16">Verification of smart contract business logic</a></td>
+        <td>Ahrendt et al.</td>
+        <td>FSEN</td>
+        <td>2019</td>
+        <td>Deductive verification, KeY, JML, JavaDL, Program logic, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.computer.org/csdl/proceedings-article/sp/2020/349700b265/1j2LggQlkvm">Semantic understanding of smart contracts: Executable operational semantics of Solidity</a></td>
+        <td>Jiao et al.</td>
+        <td>IEEE S&P</td>
+        <td>2020</td>
+        <td>K framework, Formal semantics, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://fsl.cs.illinois.edu/FSL/papers/2018/chen-park-rosu-2018-isola/chen-park-rosu-2018-isola-public.pdf">A language-independent approach to smart contract verification</a></td>
+        <td>Chen et al.</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>K framework, Reachability logic, EVM, ERC20</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://daejunpark.github.io/kevm.pdf">KEVM: A complete formal semantics of the Ethereum Virtual Machine</a></td>
+        <td>Hildenbrandt et al.</td>
+        <td>IEEE CSF</td>
+        <td>2018</td>
+        <td>K framework, Formal semantics, Reachability logic, Matching logic, EVM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://fsl.cs.illinois.edu/FSL/papers/2019/kasampalis-guth-moore-serbanuta-zhang-filaretti-serbanuta-johnson-rosu-2019-fm/kasampalis-guth-moore-serbanuta-zhang-filaretti-serbanuta-johnson-rosu-2019-fm-public.pdf">IELE: A rigorously designed language and tool ecosystem for the Blockchain</a></td>
+        <td>Kasampalis et al.</td>
+        <td>FM</td>
+        <td>2019</td>
+        <td>K framework, Formal semantics, Reachability logic, Matching logic, IELE</td>
+        <td>Ethereum, Any Ethereum-style blockchain</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://fsl.cs.illinois.edu/FSL/papers/2018/park-zhang-saxena-daian-rosu-2018-fse/park-zhang-saxena-daian-rosu-2018-fse-public.pdf">A formal verification tool for Ethereum VM bytecode</a></td>
+        <td>Park et al.</td>
+        <td>ACM ESEC/FSE</td>
+        <td>2018</td>
+        <td>K framework, Formal semantics, Reachability logic, Matching logic, EVM, ERC20</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://www.cs.cornell.edu/andru/papers/fab20/fab20.pdf">Securing smart contracts with information flow</a></td>
+        <td>Cecchetti et al.</td>
+        <td>FAB</td>
+        <td>2020</td>
+        <td>Information flow, Integrity, Composite vulnerabilities, Reentrancy</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal.inria.fr/hal-01400469/document">Formal verification of smart contracts: Short paper</a></td>
+        <td>Bhargavan et al.</td>
+        <td>ACM PLAS@PLDI</td>
+        <td>2016</td>
+        <td>F*, Formal semantics, Typechecking, Effects, Resource consumption, Vulnerabilities, Solidity, EVM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1802.08660.pdf">A semantic framework for the security analysis of ethereum smart contracts</a></td>
+        <td>Grishchenko et al.</td>
+        <td>POST</td>
+        <td>2018</td>
+        <td>F*, Formal semantics, EVM, Hyper- and safety properties</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://yanniss.github.io/ethainter-pldi20.pdf">Ethainter: A smart contract security analyzer for composite vulnerabilities</a></td>
+        <td>Brent et al.</td>
+        <td>ACM PLDI</td>
+        <td>2020</td>
+        <td>Datalog, Soufflé, Information flow, Gigahorse, Composite vulnerabilities, EVM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1809.03981.pdf">Vandal: A security analysis scalable framework</a></td>
+        <td>Brent et al.</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Datalog, Soufflé, CFG, Vulnerable patterns</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.nevillegrech.com/assets/pdf/madmax-oopsla18.pdf">MadMax: Surviving out-of-gas conditions in Ethereum smart contracts</a></td>
+        <td>Grech et al.</td>
+        <td>ACM OOPSLA</td>
+        <td>2018</td>
+        <td>Datalog, Soufflé, Resource consumption, Vulnerable patterns</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1806.01143.pdf">Securify: Practical security analysis of smart contracts</a></td>
+        <td>Tsankov et al.</td>
+        <td>ACM CCS</td>
+        <td>2018</td>
+        <td>Datalog, Soufflé, Vulnerable patterns, Compliance patterns, DSL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1902.06710.pdf">Smart contract vulnerabilities: Does anyone care?</a></td>
+        <td>Perez and Livshits</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Datalog, Execution trace, Vulnerable patterns</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1906.04984.pdf">SAFEVM: A safety verifier for Ethereum smart contracts</a></td>
+        <td>Albert et al.</td>
+        <td>ACM ISSTA</td>
+        <td>2019</td>
+        <td>Static analysis, C, CPAchecker, SeaHorn, VeryMax, Assertions, Array access, EthIR, Oyente</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1907.04262.pdf">solc-verify: A modular verifier for Solidity smart contracts</a></td>
+        <td>Hajdu and Jovanović</td>
+        <td>VSTTE@CAV</td>
+        <td>2019</td>
+        <td>Boogie, SMT solving, Z3, CVC4, Yices2, Annotations, Invariants, DSL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.10382.pdf">Formal specification and verification of Solidity contracts with events</a></td>
+        <td>Hajdu et al.</td>
+        <td>FMBC@CAV</td>
+        <td>2020</td>
+        <td>Boogie, SMT solving, Z3, CVC4, Yices2, Annotations, Invariants, DSL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2002.02710.pdf">Formalising and verifying smart contracts with Solidifier: a bounded model checker for Solidity</a></td>
+        <td>Antonino and Roscoe</td>
+        <td>arXiv</td>
+        <td>2020</td>
+        <td>Boogie, Bounded model checking, Corral, Memory model, Annotations</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1812.08829.pdf">Formal specification and verification of smart contracts for Azure blockchain</a></td>
+        <td>Wang et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Boogie, Bounded model checking, Corral, Code instrumentation, Monomial predicate abstraction</td>
+        <td>Ethereum, Azure</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1811.10403.pdf">Running on fumes--Preventing out-of-gas vulnerabilities in Ethereum smart contracts using static resource analysis</a></td>
+        <td>Albert et al.</td>
+        <td>VECoS@FM</td>
+        <td>2019</td>
+        <td>Resource consumption, Static analysis, Oyente, EthIR, SACO, PUBS</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.certora.com/pubs/sbc2020.pdf">WIP: Finding bugs automatically in smart contracts with parameterized specifications</a></td>
+        <td>Bernardi et al.</td>
+        <td>Stanford Blockchain Conference</td>
+        <td>2020</td>
+        <td>Static analysis, Hoare logic, Invariants, Certora prover</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://siqima.me/publications/saner20a.pdf">SMARTSHIELD: Automatic smart contract protection made easy</a></td>
+        <td>Zhang et al.</td>
+        <td>IEEE SANER</td>
+        <td>2020</td>
+        <td>Static analysis, Repair, Code update, EVM bytecode</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/pdf/10.1145/3224207.3224218">A method of logic-based smart contracts for blockchain system</a></td>
+        <td>Hu and Zhong</td>
+        <td>ACM ICDPA</td>
+        <td>2018</td>
+        <td>Active-U-Datalog, On-chain rule engine, License agreement</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1906.10362.pdf">EVulHunter: Detecting fake transfer vulnerabilities for EOSIO's smart contracts at Webassembly-level</a></td>
+        <td>Quan et al.</td>
+        <td>arXiv</td>
+        <td>2019</td>
+        <td>Static analysis, CFG, Pattern matching, Vulnerabilities</td>
+        <td>EOS.IO</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3205230.3205239">Proving conditional termination for smart contracts</a></td>
+        <td>Le et al.</td>
+        <td>ACM BCC@Asia CCS</td>
+        <td>2018</td>
+        <td>Static analysis, Conditional termination, Runtime enforcement</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2005.11839.pdf">Tezla, an intermediate representation for static analysis of Michelson smart contracts</a></td>
+        <td>Reis et al.</td>
+        <td>FMBC@CAV</td>
+        <td>2020</td>
+        <td>Static analysis, SoftCheck</td>
+        <td>Tezos</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.usenix.org/system/files/sec20fall_frank_prepub_0.pdf">EthBMC: A bounded model checker for smart contracts</a></td>
+        <td>Frank et al.</td>
+        <td>USENIX Security</td>
+        <td>2020</td>
+        <td>Bounded model checking, Symbolic execution, Yices2, Boolector, Z3, Memory model, Inter-contract analysis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ilyasergey.net/papers/scilla-oopsla19.pdf">Safer smart contract programming with Scilla</a></td>
+        <td>Sergey et al.</td>
+        <td>ACM OOPSLA</td>
+        <td>2019</td>
+        <td>Programming language, System F, CPS, Communicating automata, Static analysis, Resource consumption, Cashflow analysis</td>
+        <td>Zilliqa</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1908.09878.pdf">Slither: A static analysis framework for smart contracts</a></td>
+        <td>Feist et al.</td>
+        <td>IEEE/ACM WETSEB@ICSE</td>
+        <td>2019</td>
+        <td>Static analysis, Intermediate representation, Code summarization, Vulnerable patterns, SlithIR</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1805.07208.pdf">EthIR: A framework for high-level analysis of Ethereum bytecode</a></td>
+        <td>Albert et al.</td>
+        <td>ATVA</td>
+        <td>2018</td>
+        <td>Static analysis, Intermediate representation, Oyente</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-03427-6_28">SMT-based verification of Solidity smart contracts</a></td>
+        <td>Alt and C. Reitwiessner</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>Bounded model checking, SMT solving, Z3, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-03427-6_33">Computing exact worst-case gas consumption for smart contracts</a></td>
+        <td>Marescotti et al.</td>
+        <td>ISoLA</td>
+        <td>2018</td>
+        <td>Resource consumption, Symbolic model checking, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2001.03256.pdf">SMT-friendly formalization of the Solidity memory model</a></td>
+        <td>Hajdu and Jovanović</td>
+        <td>ESOP</td>
+        <td>2020</td>
+        <td>Formal semantics, Memory model, solc-verify</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1812.00619.pdf">Debugging smart contract's business logic using symbolic model-checking</a></td>
+        <td>Shishkin</td>
+        <td>Programming and Computer Software</td>
+        <td>2019</td>
+        <td>SMT solving, Z3, Symbolic model checker is under construction, Trace properties, Events</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1908.11227.pdf">VeriSmart: A highly precise safety verifier for Ethereum smart contracts</a></td>
+        <td>So et al.</td>
+        <td>IEEE S&P</td>
+        <td>2020</td>
+        <td>Static analysis, Z3, Inductive invariants generation, CEGIS-style verification, Integer bugs</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8905010">Formal verification of BNB smart contract</a></td>
+        <td>Li et al.</td>
+        <td>IEEE BIGCOM</td>
+        <td>2019</td>
+        <td>Process algebra, SAPIC, Tamarin prover,  Invariants, BNB</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://fc19.ifca.ai/wtsc/VerifLedSmCont.pdf">Verification-led smart contracts</a></td>
+        <td>Banach</td>
+        <td>WTSC@FC</td>
+        <td>2019</td>
+        <td>Program synthesis, Set-based methods, Rodin, Event-B</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://files.sri.inf.ethz.ch/website/papers/ccs19-zkay.pdf">Zkay: Specifying and enforcing data privacy in smart contracts</a></td>
+        <td>Steffen et al.</td>
+        <td>ACM CCS</td>
+        <td>2019</td>
+        <td>DSL, Privacy, NIZK proof</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2016/168.pdf">Town Crier: An authenticated data feed for smart contracts</a></td>
+        <td>Zhang et al.</td>
+        <td>ACM CCS</td>
+        <td>2016</td>
+        <td>Privacy, Trusted hardware, Inter SGX</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1801.03367.pdf">Quantitative analysis of smart contracts</a></td>
+        <td>Chatterjee et al.</td>
+        <td>ESOP</td>
+        <td>2018</td>
+        <td>Game theory, Interval abstraction refinement, Bounded analysis, Objective function</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8952206">MuSC: A tool for mutation testing of Ethereum smart contract</a></td>
+        <td>Li et al.</td>
+        <td>IEEE/ACM ASE</td>
+        <td>2019</td>
+        <td>Mutation-based testing, AST</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1912.05823.pdf">Smart contract repair</a></td>
+        <td>Yu et al.</td>
+        <td>ACM TOSEM</td>
+        <td>2020</td>
+        <td>Mutation-based program repair, Code update, Resource consumption, SCRepair</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1909.07220.pdf">Broken metre: Attacking resource metering in EVM</a></td>
+        <td>Perez and Livshits</td>
+        <td>NDSS</td>
+        <td>2020</td>
+        <td>Resource consumption, Exploit generation, Mutation-based program synthesis</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://cse.stfx.ca/~cybermatics/2018/Proceedings/pdfs/iThings!GreenCom!CPSCom!SmartData!Blockchain!CIT!Cybermatics2018-1Q1rrimpxFNyCxx89cHrQN/3JK4hkhjsgsMXXCGQkelaj/6qha5FUSMJfyaPoPs8tXaQ.pdf">Formal requirement enforcement on smart contracts based on Linear Dynamic Logic</a></td>
+        <td>Sato et al.</td>
+        <td>IEEE iThings, GreenCom, CPSCom, SmartData</td>
+        <td>2018</td>
+        <td>Program synthesis, Model сhecking, LDLf, ECA rules, Template, Statechart, SCXML</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1405.1861.pdf">Modeling Bitcoin contracts by timed automata</a></td>
+        <td>Andrychowicz et al.</td>
+        <td>FORMATS</td>
+        <td>2014</td>
+        <td>Model checking, UPPAAL, Timed automata, TCTL, Timed commitment</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://hal.archives-ouvertes.fr/hal-01760787/document">Formal verification of smart contracts based on users and blockchain behaviors models</a></td>
+        <td>Abdellatif et al.</td>
+        <td>IFIP NTMS</td>
+        <td>2018</td>
+        <td>Model checking (statistical), BIP-SMC, BIP, Timed automata, PB-LTL, NameReg</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://iopscience.iop.org/article/10.1088/1757-899X/734/1/012152/pdf">Statistical model checking for blockchain-based applications</a></td>
+        <td>Maksimov et al.</td>
+        <td>IOP Conference Series: Materials Science and Engineering</td>
+        <td>2020</td>
+        <td>Model checking (statistical), BIP-SMC, BIP, Parametrized LTL, NameReg</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.fit.fraunhofer.de/content/dam/fit/de/documents/paper-long.pdf">Model checking smart contracts for Ethereum</a></td>
+        <td>Osterland and Rose</td>
+        <td>Pervasive and Mobile Computing</td>
+        <td>2020</td>
+        <td>Model Checking, SPIN, Promela, AST, Assertions</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3185089.3185138">Formal modeling and verification of smart contracts</a></td>
+        <td>Bai et al.</td>
+        <td>ACM ICSCA</td>
+        <td>2018</td>
+        <td>Model checking, SPIN, Promela, LTL</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-25527-9_11">Validation of decentralised smart contracts through game theory and formal methods</a></td>
+        <td>Bigi et al.</td>
+        <td>Programming Languages with Applications to Biology and Security</td>
+        <td>2015</td>
+        <td>Model checking, Prism, MDP, Strategic game, PCTL, BitHalo</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1804.08133.pdf">SolidWorx: A Resilient and Trustworthy Transactive Platform for Smart and Connected Communities</a></td>
+        <td>Eisele et al.</td>
+        <td>IEEE iThings, GreenCom, CPSCom, SmartData</td>
+        <td>2018</td>
+        <td>Program synthesis, Model checking, nuXmv, FSM, BIP, CTL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://fc19.ifca.ai/preproceedings/200-preproceedings.pdf">VeriSolid: Correct-by-design smart contracts for Ethereum</a></td>
+        <td>Mavridou et al.</td>
+        <td>WTSC@FC</td>
+        <td>2019</td>
+        <td>Program synthesis, FSolidM, Model checking, nuXmv, Design patterns, FSM, BIP, CTL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="http://aronlaszka.com/papers/nelaturu2020verified.pdf">Verified development and deployment of multiple interacting smart contracts with VeriSolid</a></td>
+        <td>Nelaturu et al.</td>
+        <td>IEEE ICBC</td>
+        <td>2020</td>
+        <td>Program synthesis, FSolidM, Model checking, nuXmv, Design patterns, FSM, BIP, CTL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S240595951930181X">Policy specification and verification for blockchain and smart contracts in 5G networks</a></td>
+        <td>Unal et al.</td>
+        <td>ICT Express</td>
+        <td>2019</td>
+        <td>Model checking, NuSMV, Ambient calculus, Predicate logic, Access control, Wallet</td>
+        <td>N/A</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8726806">Model-checking of smart contracts</a></td>
+        <td>Nehaı̈ et al.</td>
+        <td>IEEE iThings, GreenCom, CPSCom, SmartData</td>
+        <td>2018</td>
+        <td>Model checking, NuSMV, CTL, Energy marketplace</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8946252">Formal verification of smart contracts using interface automata</a></td>
+        <td>Madl et al.</td>
+        <td>IEEE ICBC</td>
+        <td>2019</td>
+        <td>Model checking, NuSMV, Interface automata, CTL</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://scholarspace.manoa.hawaii.edu/bitstream/10125/64392/1/0522.pdf">Formal verification of functional requirements for smart contract compositions in supply chain management systems</a></td>
+        <td>Alqahtani et al.</td>
+        <td>HICSS</td>
+        <td>2020</td>
+        <td>Model checking, NuSMV, FSM, BIP, LTL, Supply chain</td>
+        <td>Hyperledger Fabric</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/document/8967424">Securing smart contracts in blockchain</a></td>
+        <td>Kongmanee et al.</td>
+        <td>IEEE/ACM ASEW@ASE</td>
+        <td>2019</td>
+        <td>Model checking, NuSMV, Kripke structure, LTL</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1811.06099.pdf">On the specification and verification of atomic swap smart contracts</a></td>
+        <td>Meyden</td>
+        <td>IEEE ICBC</td>
+        <td>2019</td>
+        <td>Model checking, MCK, Concurrent game structure, ATL, SL, Atomic swap</td>
+        <td>N/A (Cross-chain)</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1905.07639.pdf">Developing secure Bitcoin contracts with BitML</a></td>
+        <td>Atzei et al.</td>
+        <td>ACM ESEC/FSE</td>
+        <td>2019</td>
+        <td>Model checking, Maude, BitML, LTL, Timed commitment</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-05764-0_4">Formal verification of smart contracts from the perspective of concurrency</a></td>
+        <td>Qu et al.</td>
+        <td>SmartBlock</td>
+        <td>2018</td>
+        <td>Process algebra, CSP, Model checking, FDR, Vulnerability</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9019834">Formal analysis of smart contract based on Colored Petri Nets</a></td>
+        <td>Duo et al.</td>
+        <td>IEEE Intelligent Systems</td>
+        <td>2020</td>
+        <td>Model checking, cpntools, ASK-CTL, Hoare logic, EVM</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8753908">Formal verification of blockchain smart contract based on Colored Petri Net models</a></td>
+        <td>Liu and Liu</td>
+        <td>IEEE COMPSAC</td>
+        <td>2019</td>
+        <td>Model checking, cpntools, ASK-CTL, Vulnerability</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://eprint.iacr.org/2018/1125.pdf">Verifying liquidity of Bitcoin contracts</a></td>
+        <td>Bartoletti and Zunino</td>
+        <td>POST</td>
+        <td>2019</td>
+        <td>Model checking, LTL, Liquidity</td>
+        <td>Bitcoin</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3238147.3240728">S-gram: Towards semantic-aware security auditing for Ethereum smart contracts</a></td>
+        <td>Liu et al.</td>
+        <td>IEEE/ACM ASE</td>
+        <td>2018</td>
+        <td>Statistical language modeling, Vulnerabilities, AST, Solidity</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8813255">Recommending differentiated code to support smart contract update</a></td>
+        <td>Huang et al.</td>
+        <td>IEEE/ACM ICPC</td>
+        <td>2019</td>
+        <td>Deep learning, Code embedding, Code update</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/2001.07125.pdf">Checking smart contracts with structural code embedding</a></td>
+        <td>Gao et al.</td>
+        <td>IEEE TSE</td>
+        <td>2020</td>
+        <td>Deep learning, Code embedding, AST, Clone detection, Bug detection, SmartEmbed</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1908.08615.pdf">SmartEmbed: A tool for clone and bug detection in smart contracts through structural code embedding</a></td>
+        <td>Gao et al.</td>
+        <td>IEEE ICSME</td>
+        <td>2019</td>
+        <td>Deep learning, Code embedding, AST, Clone detection, Bug detection</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1811.06632.pdf">Towards safer smart contracts: A sequence learning approach to detecting vulnerabilities</a></td>
+        <td>Tann et al.</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Deep learning, Sequence learning, LSTM RNN model, EVM opcode, Vulnerabilities, Maian</td>
+        <td>Ethereum</td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://arxiv.org/pdf/1807.01868.pdf">Hunting the Ethereum smart contract: Color-inspired inspection of potential attacks</a></td>
+        <td>Huang</td>
+        <td>arXiv</td>
+        <td>2018</td>
+        <td>Deep learning, Transfer learning, RGB color code, Vulnerabilities, EVM bytecode</td>
+        <td>Ethereum</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+      
+
+</div>
+
+    
+    <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        NTU SRSLab
+        &nbsp;&bull;&nbsp;
+      
+      2020
+
+      
+
+      
+      </p>
+      <!-- Please don't remove this, keep my open source work credited :) -->
+      <p class="theme-by text-muted">
+        Theme by
+        <a href="https://beautifuljekyll.com">beautiful-jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/smart-contract-publications/assets/js/main.js"></script>
+    
+  
+
+
+
+
+
+
+  
+  </body>
+</html>
